@@ -1,0 +1,54 @@
+.header{
+    background: #343A40;
+    display: grid;
+    padding: 25px;
+
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "logo texto";
+}
+
+.header .logo{
+    float: left;
+    grid-area: logo;
+
+}
+
+.header .texto{
+    grid-area: texto;
+}
+
+.card{
+    max-width: 100%;
+    background: #8be1ef;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header{
+        background: #343A40;
+        display: grid;
+        padding: 25px;
+    
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "logo logo"
+                             "texto texto";
+    }
+    
+    .header .logo{
+        display: flex;
+        grid-area: logo;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .header .texto{
+        display: flex;
+        grid-area: texto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+  }
