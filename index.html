@@ -21,77 +21,72 @@
     </div>
 
     <div class="card">
-        <div class="row p-5">
-            <div class="offset-md-4 input-group col-4 mt-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Entrada" id="entrada">
+        <div class="row p-5 ">
+          <div class="col-md-6 ">
+            <div class=" input-group col-8 mt-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
               </div>
+              <input type="text" class="form-control" placeholder="Entrada" id="entrada">
+            </div>
 
-              <div class=" offset-md-4 input-group col-4 mt-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Segundo" id="segundo" >
+            <div class=" input-group col-8 mt-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
               </div>
-              <div class="offset-md-4 input-group col-4 mt-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Postre" id="postre">
+              <input type="text" class="form-control" placeholder="Segundo" id="segundo" >
+            </div>
+            <div class=" input-group col-8 mt-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
               </div>
-              <div class=" offset-md-4 input-group col-4 mt-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-glass" aria-hidden="true"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Bebida" id="bebida">
+              <input type="text" class="form-control" placeholder="Postre" id="postre">
+            </div>
+            <div class="  input-group col-8 mt-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-glass" aria-hidden="true"></i></span>
               </div>
+              <input type="text" class="form-control" placeholder="Bebida" id="bebida">
+            </div>
 
-              <div class=" offset-md-4 input-group col-4 mt-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-money" aria-hidden="true"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Precio" id="precio">
+            <div class="  input-group col-8 mt-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-money" aria-hidden="true"></i></span>
               </div>
+              <input type="text" class="form-control" placeholder="Precio" id="precio">
+            </div>
 
-              <div class=" offset-md-4 input-group col-4 mt-4">
-                <button class="btn btn-primary btn-block" type="button">Agregar</button>
-                <button class="btn btn-danger btn-block" type="button">Limpiar</button>
-              </div>
+            <div class=" input-group col-8 mt-4">
+              <button class="btn btn-primary btn-block" type="button" onclick="crear()">Agregar</button>
+              <button class="btn btn-danger btn-block" type="button">Limpiar</button>
+            </div>
+          </div>
+
         </div>
     </div>
 
-    <div class="offset-md-2 col-md-8">
+    <div class="offset-md-1 col-md-10">
 
       <table class="table">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Entrada</th>
+            <th scope="col">Segundo</th>
+            <th scope="col">Bebida</th>
+            <th scope="col">Postre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">botones</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>Sopa de Pollo</td>
+            <td>Chaufa de Pescado</td>
+            <td>Limonada</td>
+            <td>Selva negra</td>
+            <td>25.00</td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
+
         </tbody>
       </table>
     </div>
