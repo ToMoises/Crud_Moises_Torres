@@ -92,7 +92,9 @@ function editar(nombre){
 
 function deleteIndividual(nombre){
     console.log(nombre);
-    nombres = nombres.filter(n => n !== nombre);
+    const index = nombres.indexOf(nombre);
+    nombres.splice(index,1);
+ //   nombres = nombres.filter(n => n !== nombre);
     localStorage.setItem("nombres", JSON.stringify(nombres));
     Actualizar();
 }
