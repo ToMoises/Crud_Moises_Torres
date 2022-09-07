@@ -39,6 +39,20 @@ function crear() {
 
 
 function mostrar() {
+  if(menus.length === 0){
+    const tbl_menus = _tbl_menus;
+    tbl_menus.innerHTML = 
+    `
+    <tr class="text-center">
+          <td class="font-weight-bold" colspan="6">No hay registros</td>
+        </tr>
+    
+    `;
+
+    
+  }else{
+
+  }
     const tbl_menus = _tbl_menus;
     tbl_menus.innerHTML = "";
 
