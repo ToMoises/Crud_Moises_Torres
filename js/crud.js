@@ -38,39 +38,48 @@ if (editando) {
 
 }
 function Actualizar() {
-    lista.innerHTML = "";
-    console.log("Ingreso a actualizar");
-    //nombres es el arreglo de nombres para leer los nombres va a iterar cada nombre
-    nombres.forEach(nombre => {
-        //crear elementos para el html 
-        const li = document.createElement("li");
-        li.textContent = nombre;
-        li.classList.add("list-group-item");
 
-        const btnEliminar = document.createElement("btnEliminar")
-        const iconoBasura = document.createElement("i");
-        iconoBasura.classList.add("fa", "fa-trash");
-        btnEliminar.appendChild(iconoBasura);
-
-        btnEliminar.classList.add("btn", "btn-danger", "float-right");
-        btnEliminar.addEventListener("click", () => deleteIndividual(nombre));
-        // btnEliminar.setAttribute("title", "Eliminar");
-        // btnEliminar.textContent = "Eliminar";
-        li.appendChild(btnEliminar);
-
-
-        const btnedit = document.createElement("button");
-        btnedit.classList.add("btn", "btn-warning", "float-right", "mr-2");
-
-        const iconoEdit = document.createElement("i");
-        iconoEdit.classList.add("fa", "fa-edit");
-        btnedit.appendChild(iconoEdit);
-
-        btnedit.addEventListener("click", () => editar(nombre));
-        li.appendChild(btnedit);
-
-        lista.appendChild(li);
-    });
+    if (nombres.length == 0){
+        lista.innerHTML =
+        `
+        <li class="list-group-item text-center">No hay trabajadores registrados </li>
+        `;
+    }else{
+        lista.innerHTML = "";
+        console.log("Ingreso a actualizar");
+        //nombres es el arreglo de nombres para leer los nombres va a iterar cada nombre
+        nombres.forEach(nombre => {
+            //crear elementos para el html 
+            const li = document.createElement("li");
+            li.textContent = nombre;
+            li.classList.add("list-group-item");
+    
+            const btnEliminar = document.createElement("btnEliminar")
+            const iconoBasura = document.createElement("i");
+            iconoBasura.classList.add("fa", "fa-trash");
+            btnEliminar.appendChild(iconoBasura);
+    
+            btnEliminar.classList.add("btn", "btn-danger", "float-right");
+            btnEliminar.addEventListener("click", () => deleteIndividual(nombre));
+            // btnEliminar.setAttribute("title", "Eliminar");
+            // btnEliminar.textContent = "Eliminar";
+            li.appendChild(btnEliminar);
+    
+    
+            const btnedit = document.createElement("button");
+            btnedit.classList.add("btn", "btn-warning", "float-right", "mr-2");
+    
+            const iconoEdit = document.createElement("i");
+            iconoEdit.classList.add("fa", "fa-edit");
+            btnedit.appendChild(iconoEdit);
+    
+            btnedit.addEventListener("click", () => editar(nombre));
+            li.appendChild(btnedit);
+    
+            lista.appendChild(li);
+        });
+    }
+    
 }
 
 function Limpiar() {

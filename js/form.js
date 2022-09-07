@@ -44,15 +44,13 @@ function mostrar() {
     tbl_menus.innerHTML = 
     `
     <tr class="text-center">
-          <td class="font-weight-bold" colspan="6">No hay registros</td>
+          <td class="font-weight-bold" colspan="6">No hay registros de menus</td>
         </tr>
     
     `;
 
     
   }else{
-
-  }
     const tbl_menus = _tbl_menus;
     tbl_menus.innerHTML = "";
 
@@ -80,6 +78,8 @@ function mostrar() {
         
         ` ;
     });
+  }
+    
 
     /*
     for (let i = 0; i < menus.length; i++) {
